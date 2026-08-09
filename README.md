@@ -1,6 +1,6 @@
-# NextGen Placement Consultancy Website
+# Thagadur Career Services Website
 
-NextGen is a premium, highly responsive dark glassmorphic Single Page Application (SPA) built for a modern Placement Consultancy. It connects elite technical talent and executive leaders with future-proof corporate brands.
+Thagadur Career Services is a premium, highly responsive dark glassmorphic Single Page Application (SPA) built for a modern Placement Consultancy. It connects elite technical talent and executive leaders with future-proof corporate brands.
 
 ## 🚀 Key Features
 

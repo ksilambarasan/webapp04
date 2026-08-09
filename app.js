@@ -1,4 +1,4 @@
-// NextGen Placement Consultancy - Core Application Controller
+// Thagadur Career Services - Core Application Controller
 
 // 1. Data Definitions for Services
 const servicesData = {
@@ -27,7 +27,7 @@ const servicesData = {
     rpo: {
         title: "Recruitment Process Outsourcing",
         icon: "fa-file-invoice-dollar",
-        desc: "Integrate NextGen's expertise into your existing talent acquisition structure to scale hiring velocity without overhead.",
+        desc: "Integrate Thagadur's expertise into your existing talent acquisition structure to scale hiring velocity without overhead.",
         features: [
             "Embedded recruiters inside your corporate Slack/Teams",
             "End-to-end management from sourcing to offer signoff",
@@ -624,7 +624,7 @@ function handlePostJob(event) {
 // 11. Sign Out Session Controller
 function logoutSession() {
     activeSession = null;
-    triggerToast("Session Ended", "You have signed out from NextGen workspace portal successfully.");
+    triggerToast("Session Ended", "You have signed out from Thagadur workspace portal successfully.");
     
     // Route back to home
     navigateTo("home");
