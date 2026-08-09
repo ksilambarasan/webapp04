@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NextGen Placement Consultancy - Premium recruitment agency connecting top talent with industry leaders. Expert job matching, staffing services, and resume services.">
+    <title>NextGen Placement Consultancy | Elevate Your Career</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header id="header">
+        <a href="#home" class="logo" onclick="navigateTo('home')">
+            <i class="fa-solid fa-bolt"></i> NextGen
+        </a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active" onclick="navigateTo('home')">Home</a></li>
+                <li><a href="#about" class="nav-link" onclick="navigateTo('about')">About Us</a></li>
+                <li><a href="#services" class="nav-link" onclick="navigateTo('services')">Services</a></li>
+                <li><a href="#jobseeker" class="nav-link" onclick="navigateTo('jobseeker')">Job Seeker</a></li>
+                <li><a href="#employer" class="nav-link" onclick="navigateTo('employer')">Employers</a></li>
+                <li><a href="#contact" class="nav-link" onclick="navigateTo('contact')">Contacts</a></li>
+            </ul>
+        </nav>
+        <div class="cta-group">
+            <a href="#jobseeker" class="btn btn-secondary" onclick="navigateTo('jobseeker')">Sign In</a>
+            <a href="#employer" class="btn btn-primary" onclick="navigateTo('employer')">Post Job</a>
+        </div>
+    </header>
+
+    <!-- Main Section Content -->
+    <main>
+
+        <!-- HOME SECTION -->
+        <section id="home-section" class="active">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <h1>Connecting Elite Talent to <span class="gradient-text">Future-Proof</span> Brands</h1>
+                    <p>We are a state-of-the-art placement boutique that bridges the gap between ambitious innovators and industry-leading teams. Experience dynamic career acceleration with our AI-driven match matching and elite career advisory.</p>
+                    <div class="hero-btns">
+                        <a href="#jobseeker" class="btn btn-primary" onclick="navigateTo('jobseeker')">
+                            <i class="fa-solid fa-briefcase"></i> Join as Candidate
+                        </a>
+                        <a href="#employer" class="btn btn-secondary" onclick="navigateTo('employer')">
+                            <i class="fa-solid fa-building"></i> Hire Top Talent
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-num" id="stat-hires">12K+</span>
+                            <span class="stat-label">Successful Placements</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num" id="stat-companies">450+</span>
+                            <span class="stat-label">Corporate Clients</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num" id="stat-jobs">98%</span>
+                            <span class="stat-label">Retention Rate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="glow-card glow-card-1">
+                        <div class="card-header">
+                            <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+                            <div class="card-title">
+                                <h4>Lead Software Architect</h4>
+                                <p>Techno Corp • Remote</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            Designing resilient cloud systems and mentoring core engineering squads.
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-highlight">AWS</span>
+                            <span class="tag">Go</span>
+                            <span class="tag">Kubernetes</span>
+                        </div>
+                    </div>
+                    <div class="glow-card glow-card-2">
+                        <div class="card-header">
+                            <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                            <div class="card-title">
+                                <h4>Senior UX Designer</h4>
+                                <p>Studio Wave • NY / Hybrid</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            Architecting immersive design systems and fluid interactive journeys.
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-highlight">Figma</span>
+                            <span class="tag">Prototyping</span>
+                            <span class="tag">Research</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Jobs Section -->
+            <div style="margin-top: 100px;">
+                <h2 class="section-title">Trending Global Roles</h2>
+                <p class="section-subtitle">Explore premium job openings with immediate interview schedules.</p>
+                <div class="services-grid">
+                    <div class="glass-panel service-card" style="padding: 24px;">
+                        <span class="tag tag-highlight" style="align-self: flex-start; margin-bottom: 12px;">Hot Role</span>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 8px;">Principal ML Research Scientist</h3>
+                        <p style="font-size: 0.85rem; margin-bottom: 15px; min-height: auto;">Cognitive AI lab developing LLMs and next-gen reinforcement pipelines. High equity compensation.</p>
+                        <div style="display:flex; justify-content:space-between; width:100%; align-items:center; margin-top: auto;">
+                            <span style="font-size: 0.8rem; color:var(--text-muted);"><i class="fa-solid fa-map-pin"></i> San Francisco</span>
+                            <a href="#jobseeker" class="btn btn-outline" style="padding: 6px 12px; font-size: 0.8rem;" onclick="navigateTo('jobseeker')">Apply</a>
+                        </div>
+                    </div>
+                    <div class="glass-panel service-card" style="padding: 24px;">
+                        <span class="tag tag-highlight" style="align-self: flex-start; margin-bottom: 12px;">Hot Role</span>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 8px;">Director of Product Management</h3>
+                        <p style="font-size: 0.85rem; margin-bottom: 15px; min-height: auto;">Pioneering fintech scaling B2B transaction infrastructure globally. Driving product vision.</p>
+                        <div style="display:flex; justify-content:space-between; width:100%; align-items:center; margin-top: auto;">
+                            <span style="font-size: 0.8rem; color:var(--text-muted);"><i class="fa-solid fa-map-pin"></i> London / Remote</span>
+                            <a href="#jobseeker" class="btn btn-outline" style="padding: 6px 12px; font-size: 0.8rem;" onclick="navigateTo('jobseeker')">Apply</a>
+                        </div>
+                    </div>
+                    <div class="glass-panel service-card" style="padding: 24px;">
+                        <span class="tag tag-highlight" style="align-self: flex-start; margin-bottom: 12px;">Hot Role</span>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 8px;">Head of Cyber Threat Security</h3>
+                        <p style="font-size: 0.85rem; margin-bottom: 15px; min-height: auto;">SecureGuard Inc. Building automated compliance engines and monitoring red-team exercises.</p>
+                        <div style="display:flex; justify-content:space-between; width:100%; align-items:center; margin-top: auto;">
+                            <span style="font-size: 0.8rem; color:var(--text-muted);"><i class="fa-solid fa-map-pin"></i> Tokyo / Hybrid</span>
+                            <a href="#jobseeker" class="btn btn-outline" style="padding: 6px 12px; font-size: 0.8rem;" onclick="navigateTo('jobseeker')">Apply</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials Area -->
+            <div class="testimonials-section">
+                <h2 class="section-title">What Leaders Say</h2>
+                <p class="section-subtitle">Trusted by visionaries who advanced their companies and careers through us.</p>
+                <div class="testimonials-slider" id="testimonials-slider">
+                    <div class="testimonial-slide">
+                        <div class="testimonial-box">
+                            <div class="testimonial-rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"NextGen did not just find candidates; they uncovered superstars who integrated seamlessly into our engineering culture. Their matching efficiency is unmatched."</p>
+                            <div class="testimonial-author">
+                                <div class="author-img">SK</div>
+                                <div class="author-info">
+                                    <h4>Sarah Jenkins</h4>
+                                    <p>VP of Engineering, CloudScale</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-box">
+                            <div class="testimonial-rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Working with NextGen was the turning point in my executive journey. Within weeks, I was introduced to high-profile boards and secured my role as Lead Architect."</p>
+                            <div class="testimonial-author">
+                                <div class="author-img">DL</div>
+                                <div class="author-info">
+                                    <h4>David Lee</h4>
+                                    <p>Lead Architect, CyberSys</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-box">
+                            <div class="testimonial-rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Outstanding client services. The candidate validation pipelines they maintain saved our HR department hundreds of hours of interviewing time."</p>
+                            <div class="testimonial-author">
+                                <div class="author-img">MR</div>
+                                <div class="author-info">
+                                    <h4>Marcus Roy</h4>
+                                    <p>Talent Acquisition Director, FinNexus</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls" id="slider-controls">
+                    <span class="slider-dot active" onclick="setSlide(0)"></span>
+                    <span class="slider-dot" onclick="setSlide(1)"></span>
+                    <span class="slider-dot" onclick="setSlide(2)"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT US SECTION -->
+        <section id="about-section">
+            <h2 class="section-title">Our Story & Ethos</h2>
+            <p class="section-subtitle">We build teams that drive disruption and foster innovation.</p>
+            <div class="about-grid">
+                <div class="about-left-img">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="NextGen Team Meeting">
+                    <div class="img-overlay-card">
+                        <h4 style="color:var(--text-highlight); font-size:1.1rem; margin-bottom:5px;">Est. 2018</h4>
+                        <p style="color:var(--text-muted); font-size:0.8rem; line-height:1.4; margin:0;">Providing high-end technical and corporate leadership recruitment options across 12 countries.</p>
+                    </div>
+                </div>
+                <div class="about-right">
+                    <h3>Empowering Success via Strategic Alignment</h3>
+                    <p>At NextGen, we discard standard resume-shuffling. We examine organizational culture, product maturity, technical roadmap alignment, and behavioral synergies to craft partnerships that endure.</p>
+                    <p>Our core framework evaluates talent through deep-domain evaluations, behavioral code tests, and design interviews. Whether you are looking for executive leadership or specialized engineers, we deliver precision results.</p>
+                    <div class="about-values">
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div class="value-text">
+                                <h4>Trust & Transparency</h4>
+                                <p>We provide full visibility to candidates and hiring partners, establishing authentic alignment.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fa-solid fa-microchip"></i></div>
+                            <div class="value-text">
+                                <h4>AI-Powered Vetting</h4>
+                                <p>Combining proprietary talent profiling with direct human touch for perfect matchmaking.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fa-solid fa-earth-americas"></i></div>
+                            <div class="value-text">
+                                <h4>Global Talent Pools</h4>
+                                <p>Sourcing exceptional leaders and specialized remote individual contributors across borders.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fa-solid fa-award"></i></div>
+                            <div class="value-text">
+                                <h4>Long-term Retention</h4>
+                                <p>Our matched placements display a 98% retention rate over initial critical contract periods.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Meet the Team -->
+            <div style="margin-top: 100px;">
+                <h2 class="section-title">Leadership Behind NextGen</h2>
+                <p class="section-subtitle">Industry experts steering our global recruitment mission.</p>
+                <div class="services-grid">
+                    <div class="glass-panel" style="text-align:center; padding:30px;">
+                        <div class="avatar-placeholder" style="margin: 0 auto 20px; width: 90px; height: 90px; font-size:2.2rem;">JS</div>
+                        <h4>Jonathan Sterling</h4>
+                        <p style="color:var(--secondary-color); font-size:0.85rem; font-weight:600; margin-top:5px; margin-bottom:15px;">CEO & Co-Founder</p>
+                        <p style="color:var(--text-muted); font-size:0.85rem; line-height:1.5;">Ex-Talent VP at Google with 15+ years managing global executive tech search operations.</p>
+                    </div>
+                    <div class="glass-panel" style="text-align:center; padding:30px;">
+                        <div class="avatar-placeholder" style="margin: 0 auto 20px; width: 90px; height: 90px; font-size:2.2rem; background: linear-gradient(135deg, var(--accent-magenta), var(--primary-color));">AM</div>
+                        <h4>Aris Thorne</h4>
+                        <p style="color:var(--secondary-color); font-size:0.85rem; font-weight:600; margin-top:5px; margin-bottom:15px;">Chief Matching Officer</p>
+                        <p style="color:var(--text-muted); font-size:0.85rem; line-height:1.5;">Data scientist specializing in organizational psychometrics and job routing models.</p>
+                    </div>
+                    <div class="glass-panel" style="text-align:center; padding:30px;">
+                        <div class="avatar-placeholder" style="margin: 0 auto 20px; width: 90px; height: 90px; font-size:2.2rem; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">KP</div>
+                        <h4>Kiera Patel</h4>
+                        <p style="color:var(--secondary-color); font-size:0.85rem; font-weight:600; margin-top:5px; margin-bottom:15px;">Director, Executive Recruiting</p>
+                        <p style="color:var(--text-muted); font-size:0.85rem; line-height:1.5;">Dedicated leader in placement advisory and senior VP/C-suite leadership recruitment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services-section">
+            <h2 class="section-title">Core Talent Capabilities</h2>
+            <p class="section-subtitle">Premium recruitment pipelines structured to power performance and scale.</p>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="glass-panel service-card">
+                    <div class="service-icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <h3>Executive Search</h3>
+                    <p>Connecting board rooms and growth stage companies with transformative C-suite, President, and VP-level leaders.</p>
+                    <a href="javascript:void(0)" class="service-link" onclick="openServiceModal('executive')">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- Service 2 -->
+                <div class="glass-panel service-card">
+                    <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>Technical Staffing</h3>
+                    <p>Sourcing specialized backend, machine learning, mobile, infrastructure, and blockchain engineers on demand.</p>
+                    <a href="javascript:void(0)" class="service-link" onclick="openServiceModal('tech')">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- Service 3 -->
+                <div class="glass-panel service-card">
+                    <div class="service-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                    <h3>RPO & Recruitment Outsourcing</h3>
+                    <p>End-to-end recruitment process management integrated with your corporate talent departments.</p>
+                    <a href="javascript:void(0)" class="service-link" onclick="openServiceModal('rpo')">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- Service 4 -->
+                <div class="glass-panel service-card">
+                    <div class="service-icon"><i class="fa-solid fa-compass"></i></div>
+                    <h3>Career Advisory & Coaching</h3>
+                    <p>Personalized resume critique, interview mockups, salary negotiations, and executive visibility strategies.</p>
+                    <a href="javascript:void(0)" class="service-link" onclick="openServiceModal('advisory')">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- Service 5 -->
+                <div class="glass-panel service-card">
+                    <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
+                    <h3>Global Employer of Record (EoR)</h3>
+                    <p>Employ international talent easily with our compliance, legal, international tax, and payroll support tools.</p>
+                    <a href="javascript:void(0)" class="service-link" onclick="openServiceModal('eor')">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- Service 6 -->
+                <div class="glass-panel service-card">
+                    <div class="service-icon"><i class="fa-solid fa-briefcase"></i></div>
+                    <h3>Contract & Freelance Staffing</h3>
+                    <p>Deploy elite temporary specialists and consulting teams for mission-critical project deliverables.</p>
+                    <a href="javascript:void(0)" class="service-link" onclick="openServiceModal('contract')">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- JOB SEEKER REGISTRATION SECTION -->
+        <section id="jobseeker-section">
+            <div class="wizard-container glass-panel">
+                <h2 style="font-size:1.8rem; text-align:center; margin-bottom:10px;">Job Seeker Registration</h2>
+                <p style="color:var(--text-muted); text-align:center; font-size:0.9rem; margin-bottom:30px;">Create your profile and start receiving interview schedules from global partners.</p>
+                
+                <!-- Progress steps -->
+                <div class="wizard-steps">
+                    <div class="wizard-step-progress" id="jobseeker-progress"></div>
+                    <div class="step-indicator active" id="seeker-indicator-1">1 <span class="label">Personal</span></div>
+                    <div class="step-indicator" id="seeker-indicator-2">2 <span class="label">Professional</span></div>
+                    <div class="step-indicator" id="seeker-indicator-3">3 <span class="label">Resume & Match</span></div>
+                </div>
+
+                <!-- Registration Forms -->
+                <form id="jobseeker-form" onsubmit="handleRegistrationSubmit(event, 'seeker')">
+                    
+                    <!-- Panel 1: Personal info -->
+                    <div class="wizard-form-panel active" id="seeker-panel-1">
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="seeker-firstname">First Name <span class="required">*</span></label>
+                                <input type="text" id="seeker-firstname" class="form-control" placeholder="Enter first name" required>
+                                <span class="error-msg">First name is required</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="seeker-lastname">Last Name <span class="required">*</span></label>
+                                <input type="text" id="seeker-lastname" class="form-control" placeholder="Enter last name" required>
+                                <span class="error-msg">Last name is required</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="seeker-email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="seeker-email" class="form-control" placeholder="example@gmail.com" required>
+                            <span class="error-msg">Please enter a valid email address</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="seeker-phone">Phone Number <span class="required">*</span></label>
+                            <input type="tel" id="seeker-phone" class="form-control" placeholder="+1 (555) 000-0000" required>
+                            <span class="error-msg">Phone number is required</span>
+                        </div>
+                    </div>
+
+                    <!-- Panel 2: Profile details -->
+                    <div class="wizard-form-panel" id="seeker-panel-2">
+                        <div class="form-group">
+                            <label for="seeker-specialty">Job Field / Specialty <span class="required">*</span></label>
+                            <select id="seeker-specialty" class="form-control" required>
+                                <option value="" disabled selected>Select specialty</option>
+                                <option value="Software Engineering">Software Engineering & Tech</option>
+                                <option value="Product Management">Product Management</option>
+                                <option value="UX/UI Design">UX/UI & Design</option>
+                                <option value="Data Science & ML">Data Science & Machine Learning</option>
+                                <option value="Cybersecurity">Cybersecurity</option>
+                                <option value="Finance & Accounting">Finance & Accounting</option>
+                                <option value="Executive Board">Executive & Advisory</option>
+                            </select>
+                            <span class="error-msg">Specialty is required</span>
+                        </div>
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="seeker-experience">Experience (Years) <span class="required">*</span></label>
+                                <input type="number" id="seeker-experience" class="form-control" min="0" max="50" placeholder="e.g. 5" required>
+                                <span class="error-msg">Valid experience is required</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="seeker-expectedsalary">Expected Annual Salary ($) <span class="required">*</span></label>
+                                <input type="number" id="seeker-expectedsalary" class="form-control" min="1000" max="1000000" placeholder="e.g. 120000" required>
+                                <span class="error-msg">Expected salary is required</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="seeker-skills">Key Core Skills (Comma-separated) <span class="required">*</span></label>
+                            <input type="text" id="seeker-skills" class="form-control" placeholder="e.g. React, AWS, Node.js, System Design" required>
+                            <span class="error-msg">Skills list is required</span>
+                        </div>
+                    </div>
+
+                    <!-- Panel 3: Resume upload and final notes -->
+                    <div class="wizard-form-panel" id="seeker-panel-3">
+                        <div class="form-group">
+                            <label>Upload Professional Resume (PDF / DOCX) <span class="required">*</span></label>
+                            <div class="file-upload-wrapper">
+                                <div class="file-upload-btn" id="seeker-resume-area">
+                                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                                    <span>Drag & drop your file here, or click to upload</span>
+                                    <span style="font-size:0.75rem; color:var(--text-muted); margin-top:5px;">Max file size: 10MB</span>
+                                    <span class="file-upload-name" id="seeker-file-name"></span>
+                                </div>
+                                <input type="file" id="seeker-resume" accept=".pdf,.doc,.docx" required onchange="handleFileChange(this, 'seeker')">
+                            </div>
+                            <span class="error-msg">Resume file is required</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="seeker-summary">Brief Professional Summary</label>
+                            <textarea id="seeker-summary" class="form-control" placeholder="Briefly describe your career achievements and goals..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Wizard actions navigation -->
+                    <div class="wizard-actions">
+                        <button type="button" class="btn btn-secondary" id="seeker-prev-btn" onclick="wizardStep('seeker', -1)" style="visibility:hidden;">
+                            <i class="fa-solid fa-chevron-left"></i> Previous
+                        </button>
+                        <button type="button" class="btn btn-primary" id="seeker-next-btn" onclick="wizardStep('seeker', 1)">
+                            Next <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                        <button type="submit" class="btn btn-primary" id="seeker-submit-btn" style="display:none;">
+                            Submit & Launch Profile <i class="fa-solid fa-check"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- EMPLOYER REGISTRATION SECTION -->
+        <section id="employer-section">
+            <div class="wizard-container glass-panel">
+                <h2 style="font-size:1.8rem; text-align:center; margin-bottom:10px;">Employer Partnership Registration</h2>
+                <p style="color:var(--text-muted); text-align:center; font-size:0.9rem; margin-bottom:30px;">Partner with us to gain direct access to vetted leadership and technical candidates.</p>
+                
+                <!-- Progress steps -->
+                <div class="wizard-steps">
+                    <div class="wizard-step-progress" id="employer-progress"></div>
+                    <div class="step-indicator active" id="employer-indicator-1">1 <span class="label">Company</span></div>
+                    <div class="step-indicator" id="employer-indicator-2">2 <span class="label">Contact</span></div>
+                    <div class="step-indicator" id="employer-indicator-3">3 <span class="label">Requirements</span></div>
+                </div>
+
+                <!-- Registration Forms -->
+                <form id="employer-form" onsubmit="handleRegistrationSubmit(event, 'employer')">
+                    
+                    <!-- Panel 1: Company Profile -->
+                    <div class="wizard-form-panel active" id="employer-panel-1">
+                        <div class="form-group">
+                            <label for="employer-company">Company Legal Name <span class="required">*</span></label>
+                            <input type="text" id="employer-company" class="form-control" placeholder="e.g. Innovate Tech Inc." required>
+                            <span class="error-msg">Company name is required</span>
+                        </div>
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="employer-website">Corporate Website <span class="required">*</span></label>
+                                <input type="url" id="employer-website" class="form-control" placeholder="https://example.com" required>
+                                <span class="error-msg">Please enter a valid website URL</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="employer-industry">Industry / Sector <span class="required">*</span></label>
+                                <select id="employer-industry" class="form-control" required>
+                                    <option value="" disabled selected>Select industry</option>
+                                    <option value="SaaS & Cloud">SaaS & Enterprise Technology</option>
+                                    <option value="Artificial Intelligence">AI & Machine Learning</option>
+                                    <option value="Fintech">Fintech & Payments</option>
+                                    <option value="Healthtech & Biotech">Healthcare & Biotech</option>
+                                    <option value="Ecommerce">Ecommerce & Marketplace</option>
+                                    <option value="Cybersecurity">Cybersecurity Operations</option>
+                                </select>
+                                <span class="error-msg">Industry is required</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="employer-size">Company Employee Size <span class="required">*</span></label>
+                            <select id="employer-size" class="form-control" required>
+                                <option value="" disabled selected>Select company size</option>
+                                <option value="1-50 employees">1 - 50 Employees (Seed / Series A)</option>
+                                <option value="51-200 employees">51 - 200 Employees (Growth Scale)</option>
+                                <option value="201-1000 employees">201 - 1000 Employees (Medium Enterprise)</option>
+                                <option value="1000+ employees">1000+ Employees (Global Corporation)</option>
+                            </select>
+                            <span class="error-msg">Company size is required</span>
+                        </div>
+                    </div>
+
+                    <!-- Panel 2: HR Contact Info -->
+                    <div class="wizard-form-panel" id="employer-panel-2">
+                        <div class="form-group">
+                            <label for="employer-hrname">Primary Representative Name <span class="required">*</span></label>
+                            <input type="text" id="employer-hrname" class="form-control" placeholder="Enter full name" required>
+                            <span class="error-msg">HR contact name is required</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="employer-designation">Corporate Designation / Title <span class="required">*</span></label>
+                            <input type="text" id="employer-designation" class="form-control" placeholder="e.g. Lead Talent Acquisition / Director of HR" required>
+                            <span class="error-msg">Designation is required</span>
+                        </div>
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="employer-email">Work Email Address <span class="required">*</span></label>
+                                <input type="email" id="employer-email" class="form-control" placeholder="hr@yourcompany.com" required>
+                                <span class="error-msg">Please enter a valid work email</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="employer-phone">HR Contact Number <span class="required">*</span></label>
+                                <input type="tel" id="employer-phone" class="form-control" placeholder="+1 (555) 000-0000" required>
+                                <span class="error-msg">Contact number is required</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 3: Hiring Requirements -->
+                    <div class="wizard-form-panel" id="employer-panel-3">
+                        <div class="form-group">
+                            <label for="employer-openings">Active Hiring Roles Count <span class="required">*</span></label>
+                            <select id="employer-openings" class="form-control" required>
+                                <option value="" disabled selected>Select active openings</option>
+                                <option value="1-3 open roles">1 - 3 Open Roles</option>
+                                <option value="4-10 open roles">4 - 10 Open Roles</option>
+                                <option value="10+ open roles">10+ Open Roles</option>
+                                <option value="Pipeline expansion">Building talent pipelines only</option>
+                            </select>
+                            <span class="error-msg">This field is required</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="employer-rolesdesc">Describe Current Talent Requirements</label>
+                            <textarea id="employer-rolesdesc" class="form-control" placeholder="List any urgent vacancies, target tech stacks, and priority experience levels (e.g. Senior Node.js developer, AWS certified dev)..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Wizard actions navigation -->
+                    <div class="wizard-actions">
+                        <button type="button" class="btn btn-secondary" id="employer-prev-btn" onclick="wizardStep('employer', -1)" style="visibility:hidden;">
+                            <i class="fa-solid fa-chevron-left"></i> Previous
+                        </button>
+                        <button type="button" class="btn btn-primary" id="employer-next-btn" onclick="wizardStep('employer', 1)">
+                            Next <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                        <button type="submit" class="btn btn-primary" id="employer-submit-btn" style="display:none;">
+                            Submit & Open Workspace <i class="fa-solid fa-handshake"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- CONTACTS SECTION -->
+        <section id="contact-section">
+            <h2 class="section-title">Initiate Alignment</h2>
+            <p class="section-subtitle">Reach out to start a conversation about scaling teams or your career trajectory.</p>
+            
+            <div class="contact-grid">
+                <!-- Contact info details and simulated map -->
+                <div class="contact-info">
+                    <div class="glass-panel contact-card">
+                        <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="contact-card-details">
+                            <h4>Corporate Headquarters</h4>
+                            <p>Suite 500, Glass Towers, Innovation Hub, Tech District, Bangalore - 560001</p>
+                        </div>
+                    </div>
+                    <div class="glass-panel contact-card">
+                        <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="contact-card-details">
+                            <h4>Client Relations & Careers</h4>
+                            <p>enquiries@nextgenplacements.com<br>support@nextgenplacements.com</p>
+                        </div>
+                    </div>
+                    <div class="glass-panel contact-card">
+                        <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="contact-card-details">
+                            <h4>Global Recruiting Hotline</h4>
+                            <p>+91 (80) 4567 8900<br>Mon - Fri, 9 AM - 6 PM IST</p>
+                        </div>
+                    </div>
+                    <!-- Social Links -->
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <h4 style="font-size: 0.95rem; text-transform:uppercase; letter-spacing:1px; color:var(--text-muted);">Connect with us</h4>
+                        <div class="social-links">
+                            <a href="https://linkedin.com" target="_blank" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://twitter.com" target="_blank" class="social-btn"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://github.com/ksilambarasan/webapp04" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <!-- Simulated Map -->
+                    <div class="map-placeholder">
+                        <div class="map-grid"></div>
+                        <i class="fa-solid fa-map-pin map-pin"></i>
+                        <span style="position:absolute; bottom:15px; color:var(--text-primary); font-size:0.8rem; z-index:2; font-weight:600; text-shadow:0 2px 4px rgba(0,0,0,0.8);">NextGen HQ - Bangalore</span>
+                    </div>
+                </div>
+
+                <!-- Contact Message Form -->
+                <div class="glass-panel">
+                    <h3 style="font-size:1.5rem; margin-bottom:15px; border-bottom:1px solid var(--border-color); padding-bottom:12px;">Send an Inquiry</h3>
+                    <form id="contact-form" onsubmit="handleContactSubmit(event)">
+                        <div class="form-group">
+                            <label for="contact-name">Your Full Name <span class="required">*</span></label>
+                            <input type="text" id="contact-name" class="form-control" placeholder="Enter full name" required>
+                            <span class="error-msg">Name is required</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="contact-email" class="form-control" placeholder="example@gmail.com" required>
+                            <span class="error-msg">Valid email is required</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Inquiry Subject <span class="required">*</span></label>
+                            <input type="text" id="contact-subject" class="form-control" placeholder="e.g. Partner onboarding / Career questions" required>
+                            <span class="error-msg">Subject is required</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Detailed Message <span class="required">*</span></label>
+                            <textarea id="contact-message" class="form-control" placeholder="Write your inquiry message here..." required></textarea>
+                            <span class="error-msg">Message content is required</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 10px;">
+                            Dispatch Message <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- JOB SEEKER DASHBOARD (HIDDEN ON START) -->
+        <section id="dashboard-seeker-section">
+            <div class="dashboard-grid">
+                <!-- Sidebar -->
+                <div class="dashboard-sidebar">
+                    <div class="sidebar-profile">
+                        <div class="avatar-placeholder" id="seeker-avatar-lbl">JS</div>
+                        <h4 id="seeker-profile-name">Candidate Name</h4>
+                        <p id="seeker-profile-role">Software Engineer</p>
+                    </div>
+                    <button class="dashboard-menu-item active" onclick="switchDashboardTab('seeker', 'home')">
+                        <i class="fa-solid fa-house"></i> Overview
+                    </button>
+                    <button class="dashboard-menu-item" onclick="switchDashboardTab('seeker', 'jobs')">
+                        <i class="fa-solid fa-briefcase"></i> Vetted Jobs
+                    </button>
+                    <button class="dashboard-menu-item" onclick="switchDashboardTab('seeker', 'applications')">
+                        <i class="fa-solid fa-file-circle-check"></i> Applications
+                    </button>
+                    <button class="dashboard-menu-item" onclick="logoutSession()" style="margin-top:auto; color:var(--accent-magenta);">
+                        <i class="fa-solid fa-right-from-bracket"></i> Sign Out
+                    </button>
+                </div>
+
+                <!-- Main Work Area -->
+                <div class="dashboard-main-area">
+                    
+                    <!-- Tab: Overview -->
+                    <div class="dashboard-content-panel active" id="seeker-tab-home">
+                        <div class="dashboard-header-bar">
+                            <h2>Candidate Matchspace</h2>
+                            <span style="font-size:0.85rem; color:var(--secondary-color); font-weight:600;"><i class="fa-solid fa-circle-check"></i> Verified Profile</span>
+                        </div>
+                        <div class="metrics-row">
+                            <div class="glass-panel metric-card">
+                                <div class="metric-header"><span>Match Index Score</span><i class="fa-solid fa-bullseye" style="color:var(--secondary-color)"></i></div>
+                                <div class="metric-val" id="seeker-match-score">94%</div>
+                            </div>
+                            <div class="glass-panel metric-card">
+                                <div class="metric-header"><span>Recommended Jobs</span><i class="fa-solid fa-rocket" style="color:var(--primary-color)"></i></div>
+                                <div class="metric-val">14 Roles</div>
+                            </div>
+                            <div class="glass-panel metric-card">
+                                <div class="metric-header"><span>Active Interviews</span><i class="fa-solid fa-user-clock" style="color:var(--accent-magenta)"></i></div>
+                                <div class="metric-val" id="seeker-active-interviews">2 Scheduled</div>
+                            </div>
+                        </div>
+
+                        <div class="glass-panel" style="margin-bottom:30px;">
+                            <h3 style="font-size:1.15rem; margin-bottom:15px; display:flex; align-items:center; gap:10px;">
+                                <i class="fa-solid fa-address-card" style="color:var(--secondary-color)"></i> Registered Profile Blueprint
+                            </h3>
+                            <div style="display:grid; grid-template-columns:1fr 1fr; gap:15px; font-size:0.9rem;">
+                                <p><strong style="color:var(--text-highlight)">Registered Email:</strong> <span id="seeker-card-email"></span></p>
+                                <p><strong style="color:var(--text-highlight)">Contact Phone:</strong> <span id="seeker-card-phone"></span></p>
+                                <p><strong style="color:var(--text-highlight)">Years Experience:</strong> <span id="seeker-card-experience"></span> Years</p>
+                                <p><strong style="color:var(--text-highlight)">Salary Expectation:</strong> $<span id="seeker-card-salary"></span> / yr</p>
+                            </div>
+                            <p style="margin-top:15px; border-top:1px solid var(--border-color); padding-top:15px; font-size:0.9rem; line-height:1.6;">
+                                <strong style="color:var(--text-highlight)">Skills Inventory:</strong> <span id="seeker-card-skills" class="tag tag-highlight" style="display:inline-block; font-size:0.8rem; padding:4px 10px;"></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tab: Recommended Jobs -->
+                    <div class="dashboard-content-panel" id="seeker-tab-jobs">
+                        <div class="dashboard-header-bar">
+                            <h2>Perfect AI Matches</h2>
+                            <p style="color:var(--text-muted); font-size:0.85rem;">Based on your skills inventory & specialty profile.</p>
+                        </div>
+                        <div class="dashboard-list" id="seeker-jobs-list">
+                            <!-- Injected dynamically based on skills -->
+                        </div>
+                    </div>
+
+                    <!-- Tab: Applications -->
+                    <div class="dashboard-content-panel" id="seeker-tab-applications">
+                        <div class="dashboard-header-bar">
+                            <h2>Application Progress Track</h2>
+                            <p style="color:var(--text-muted); font-size:0.85rem;">Real-time update stream of applications.</p>
+                        </div>
+                        <div class="dashboard-list">
+                            <div class="list-item-card">
+                                <div class="list-item-info">
+                                    <div class="list-item-avatar"><i class="fa-solid fa-code"></i></div>
+                                    <div class="list-item-details">
+                                        <h4>Lead Software Architect</h4>
+                                        <p>Techno Corp • Vetted Match Index: 94%</p>
+                                    </div>
+                                </div>
+                                <span class="list-item-status status-interview">Interview Scheduled (12 Aug)</span>
+                            </div>
+                            <div class="list-item-card">
+                                <div class="list-item-info">
+                                    <div class="list-item-avatar"><i class="fa-solid fa-cloud"></i></div>
+                                    <div class="list-item-details">
+                                        <h4>Senior DevOps Infrastructure Specialist</h4>
+                                        <p>DataFlow Inc • Vetted Match Index: 89%</p>
+                                    </div>
+                                </div>
+                                <span class="list-item-status status-approved">Offer Proposed</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- EMPLOYER DASHBOARD (HIDDEN ON START) -->
+        <section id="dashboard-employer-section">
+            <div class="dashboard-grid">
+                <!-- Sidebar -->
+                <div class="dashboard-sidebar">
+                    <div class="sidebar-profile">
+                        <div class="avatar-placeholder" id="employer-avatar-lbl">IN</div>
+                        <h4 id="employer-profile-name">Company Name</h4>
+                        <p id="employer-profile-industry">Enterprise SaaS</p>
+                    </div>
+                    <button class="dashboard-menu-item active" onclick="switchDashboardTab('employer', 'home')">
+                        <i class="fa-solid fa-house"></i> Overview
+                    </button>
+                    <button class="dashboard-menu-item" onclick="switchDashboardTab('employer', 'candidates')">
+                        <i class="fa-solid fa-users"></i> Talent Matches
+                    </button>
+                    <button class="dashboard-menu-item" onclick="switchDashboardTab('employer', 'jobs')">
+                        <i class="fa-solid fa-plus"></i> Post Job Role
+                    </button>
+                    <button class="dashboard-menu-item" onclick="logoutSession()" style="margin-top:auto; color:var(--accent-magenta);">
+                        <i class="fa-solid fa-right-from-bracket"></i> Sign Out
+                    </button>
+                </div>
+
+                <!-- Main Work Area -->
+                <div class="dashboard-main-area">
+                    
+                    <!-- Tab: Overview -->
+                    <div class="dashboard-content-panel active" id="employer-tab-home">
+                        <div class="dashboard-header-bar">
+                            <h2>Partner Dashboard</h2>
+                            <span style="font-size:0.85rem; color:var(--secondary-color); font-weight:600;"><i class="fa-solid fa-shield"></i> Premium Partner</span>
+                        </div>
+                        <div class="metrics-row">
+                            <div class="glass-panel metric-card">
+                                <div class="metric-header"><span>Hiring Openings</span><i class="fa-solid fa-briefcase" style="color:var(--secondary-color)"></i></div>
+                                <div class="metric-val" id="employer-openings-count">2 Active</div>
+                            </div>
+                            <div class="glass-panel metric-card">
+                                <div class="metric-header"><span>Recommended Candidates</span><i class="fa-solid fa-user-check" style="color:var(--primary-color)"></i></div>
+                                <div class="metric-val">18 Matches</div>
+                            </div>
+                            <div class="glass-panel metric-card">
+                                <div class="metric-header"><span>Interviews Set</span><i class="fa-solid fa-calendar-day" style="color:var(--accent-magenta)"></i></div>
+                                <div class="metric-val">3 Scheduled</div>
+                            </div>
+                        </div>
+
+                        <div class="glass-panel" style="margin-bottom:30px;">
+                            <h3 style="font-size:1.15rem; margin-bottom:15px; display:flex; align-items:center; gap:10px;">
+                                <i class="fa-solid fa-building" style="color:var(--secondary-color)"></i> Corporate Profile Credentials
+                            </h3>
+                            <div style="display:grid; grid-template-columns:1fr 1fr; gap:15px; font-size:0.9rem;">
+                                <p><strong style="color:var(--text-highlight)">Company Representative:</strong> <span id="employer-card-hrname"></span></p>
+                                <p><strong style="color:var(--text-highlight)">Representative Designation:</strong> <span id="employer-card-designation"></span></p>
+                                <p><strong style="color:var(--text-highlight)">Work Contact Email:</strong> <span id="employer-card-email"></span></p>
+                                <p><strong style="color:var(--text-highlight)">Contact Phone:</strong> <span id="employer-card-phone"></span></p>
+                                <p><strong style="color:var(--text-highlight)">Corporate Size Tier:</strong> <span id="employer-card-size"></span></p>
+                                <p><strong style="color:var(--text-highlight)">Web URL:</strong> <a id="employer-card-url" href="#" target="_blank" style="color:var(--secondary-color)"></a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab: Candidates -->
+                    <div class="dashboard-content-panel" id="employer-tab-candidates">
+                        <div class="dashboard-header-bar">
+                            <h2>Recommended Talent Matches</h2>
+                            <p style="color:var(--text-muted); font-size:0.85rem;">Instantly vetted matching individual contributors.</p>
+                        </div>
+                        <div class="dashboard-list">
+                            <div class="list-item-card">
+                                <div class="list-item-info">
+                                    <div class="avatar-placeholder" style="width:44px; height:44px; border-radius:8px; margin-bottom:0; font-size:1rem;">AM</div>
+                                    <div class="list-item-details">
+                                        <h4>Alex Mercer</h4>
+                                        <p>Senior Full-Stack Engineer • Tech Stack: React, Node.js, AWS, Redis</p>
+                                    </div>
+                                </div>
+                                <div style="display:flex; gap:10px; align-items:center;">
+                                    <span class="tag tag-highlight">Match: 96%</span>
+                                    <button class="btn btn-outline" style="padding: 6px 12px; font-size: 0.8rem;" onclick="scheduleInterview('Alex Mercer')">Set Interview</button>
+                                </div>
+                            </div>
+                            <div class="list-item-card">
+                                <div class="list-item-info">
+                                    <div class="avatar-placeholder" style="width:44px; height:44px; border-radius:8px; margin-bottom:0; font-size:1rem; background: linear-gradient(135deg, var(--accent-magenta), var(--primary-color));">EC</div>
+                                    <div class="list-item-details">
+                                        <h4>Elena Rostova</h4>
+                                        <p>Machine Learning Specialist • Tech Stack: PyTorch, Python, LLMs, Docker</p>
+                                    </div>
+                                </div>
+                                <div style="display:flex; gap:10px; align-items:center;">
+                                    <span class="tag tag-highlight">Match: 91%</span>
+                                    <button class="btn btn-outline" style="padding: 6px 12px; font-size: 0.8rem;" onclick="scheduleInterview('Elena Rostova')">Set Interview</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab: Post Job -->
+                    <div class="dashboard-content-panel" id="employer-tab-jobs">
+                        <div class="dashboard-header-bar">
+                            <h2>Post a New Vetted Position</h2>
+                            <p style="color:var(--text-muted); font-size:0.85rem;">Distribute instantly across our verified candidate networks.</p>
+                        </div>
+                        <div class="glass-panel" style="max-width: 600px; margin: 0 auto;">
+                            <form id="employer-add-job-form" onsubmit="handlePostJob(event)">
+                                <div class="form-group">
+                                    <label for="new-job-title">Job Title <span class="required">*</span></label>
+                                    <input type="text" id="new-job-title" class="form-control" placeholder="e.g. Senior Backend Engineer" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="new-job-salary">Annual Target Compensation ($) <span class="required">*</span></label>
+                                    <input type="number" id="new-job-salary" class="form-control" placeholder="e.g. 140000" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="new-job-skills">Required Key Tech Stack (Comma separated) <span class="required">*</span></label>
+                                    <input type="text" id="new-job-skills" class="form-control" placeholder="e.g. Node.js, Kubernetes, Postgres" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; margin-top:15px;">
+                                    Post and Index Position <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="#home" class="logo" onclick="navigateTo('home')">
+                    <i class="fa-solid fa-bolt"></i> NextGen
+                </a>
+                <p>Leading global placement consultancy bridging executive leadership and specialized technical teams since 2018.</p>
+            </div>
+            <div class="footer-col">
+                <h4>For Candidates</h4>
+                <ul class="footer-links">
+                    <li><a href="#jobseeker" onclick="navigateTo('jobseeker')">Register Profile</a></li>
+                    <li><a href="#home" onclick="navigateTo('home')">Explore Jobs</a></li>
+                    <li><a href="#services" onclick="navigateTo('services')">Career Advisory</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>For Employers</h4>
+                <ul class="footer-links">
+                    <li><a href="#employer" onclick="navigateTo('employer')">Partner Onboarding</a></li>
+                    <li><a href="#services" onclick="navigateTo('services')">Executive Recruitment</a></li>
+                    <li><a href="#services" onclick="navigateTo('services')">Global Employer of Record</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company Info</h4>
+                <ul class="footer-links">
+                    <li><a href="#about" onclick="navigateTo('about')">About Our Ethos</a></li>
+                    <li><a href="#contact" onclick="navigateTo('contact')">Get In Touch</a></li>
+                    <li><a href="https://github.com/ksilambarasan/webapp04" target="_blank">Repository Space</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 NextGen Placements Ltd. All legal rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="javascript:void(0)">Privacy Policy</a>
+                <a href="javascript:void(0)">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Service Details Modal Overlay -->
+    <div class="overlay-modal" id="service-modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeServiceModal()"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-icon" id="modal-icon-ph"><i class="fa-solid fa-circle"></i></div>
+            <h3 id="modal-title-ph">Service Title</h3>
+            <p id="modal-desc-ph">Detailed explanation of service...</p>
+            <h4 style="font-size:1rem; margin-bottom:12px;">Core Deliverables Included:</h4>
+            <ul class="modal-features" id="modal-features-ph">
+                <!-- Injected dynamically -->
+            </ul>
+            <div style="display:flex; gap:15px; justify-content:flex-end;">
+                <button class="btn btn-secondary" onclick="closeServiceModal()">Dismiss</button>
+                <a href="#contact" class="btn btn-primary" onclick="closeServiceModal(); navigateTo('contact')">Inquire Service</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Success Popup Alert -->
+    <div class="toast-notification" id="toast-notif">
+        <i class="fa-solid fa-circle-check"></i>
+        <div>
+            <h4 style="font-size:0.9rem; margin-bottom:2px;" id="toast-title">Success Header</h4>
+            <p style="font-size:0.8rem; color:var(--text-muted);" id="toast-msg">Detailed toast description.</p>
+        </div>
+    </div>
+
+    <!-- Application Controller Logic Script -->
+    <script src="app.js"></script>
+</body>
+</html>
