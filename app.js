@@ -2,70 +2,48 @@
 
 // 1. Data Definitions for Services
 const servicesData = {
-    executive: {
-        title: "Executive Leadership Search",
-        icon: "fa-user-tie",
-        desc: "We identify and recruit high-impact executives (CEOs, CTOs, VPs, and Board Members) who align with your long-term corporate vision and culture.",
+    pmwani: {
+        title: "Thagadur Wi-Fi PM-WANI",
+        icon: "fa-wifi",
+        desc: "Bringing seamless internet connectivity across communities via the Prime Minister Wi-Fi Access Network Interface (PM-WANI). Become a Public Data Office (PDO) and monetize your internet connection.",
         features: [
-            "Comprehensive market mapping & candidate identification",
-            "Deep behavioral profiling & leadership alignment vetting",
-            "Compensation architecture and negotiation counseling",
-            "Discreet and fully confidential background validations"
+            "Public Wi-Fi Hotspots for shops, commercial & public areas",
+            "Turn internet connectivity into income as a registered PDO",
+            "Affordable internet data packages for youth & community",
+            "Full technical setup, PDO device provisioning & support"
         ]
     },
-    tech: {
-        title: "Technical Staffing Pipelines",
-        icon: "fa-laptop-code",
-        desc: "Access specialized tech talent. We maintain verified networks of individual contributors, architects, and engineering managers across primary tech hubs.",
+    hiretraindeploy: {
+        title: "Hire, Train, Deploy",
+        icon: "fa-user-gear",
+        desc: "Streamline your talent acquisition process. We source skilled candidates, deliver customized job-ready training modules, and seamlessly deploy ready professionals to your squad.",
         features: [
-            "Direct code assessment and tech vetting processes",
-            "Niche specialties: ML, Cloud Infrastructure, Security, Blockchain",
-            "Rapid deployment setups (remote & on-site models)",
-            "Strict candidate vetting before introduction"
+            "Targeted candidate sourcing & rigorous selection process",
+            "Custom training programs tailored to company skill gaps",
+            "Job-ready professionals prepared to contribute from Day 1",
+            "Reduced onboarding costs and risk-free integration"
         ]
     },
-    rpo: {
-        title: "Recruitment Process Outsourcing",
-        icon: "fa-file-invoice-dollar",
-        desc: "Integrate Thagadur's expertise into your existing talent acquisition structure to scale hiring velocity without overhead.",
+    staffing: {
+        title: "Staffing Services",
+        icon: "fa-users-line",
+        desc: "Bridging the gap between talent and opportunity. Connecting ambitious job seekers with ideal roles and providing companies with curated, pre-screened talent.",
         features: [
-            "Embedded recruiters inside your corporate Slack/Teams",
-            "End-to-end management from sourcing to offer signoff",
-            "ATS tool optimization and dashboard reporting setups",
-            "Cost-per-hire optimization frameworks"
+            "Personalized job matching based on candidate goals",
+            "Expert resume crafting, interview coaching & guidance",
+            "Permanent recruitment, contract-to-hire & temporary staffing",
+            "Full-cycle candidate acquisition & screening support"
         ]
     },
-    advisory: {
-        title: "Career Advisory & Coaching",
-        icon: "fa-compass",
-        desc: "One-on-one professional guidance for elite candidates seeking career acceleration or leadership transitions.",
+    training: {
+        title: "Job-Oriented Training",
+        icon: "fa-chalkboard-user",
+        desc: "Equipping students and professionals with high-demand practical skills for competitive job markets, career reorganization, and professional advancement.",
         features: [
-            "Custom ATS-optimized resume restructuring",
-            "Simulated technical architecture and behavioral mocks",
-            "Personal brand development on LinkedIn & github",
-            "Market value benchmarking and offer review guidance"
-        ]
-    },
-    eor: {
-        title: "Global Employer of Record (EoR)",
-        icon: "fa-globe",
-        desc: "Hire talent globally in days. We handle legal compliance, local payroll taxes, benefits administration, and contracts in over 12 countries.",
-        features: [
-            "Fully compliant international employment agreements",
-            "Local currency payroll processing and tax reporting",
-            "Localized health benefit structures & pensions",
-            "IP and copyright security protection guarantees"
-        ]
-    },
-    contract: {
-        title: "Contract & Freelance Staffing",
-        icon: "fa-briefcase",
-        desc: "Flexible, rapid-scale consulting teams and independent contract experts for time-sensitive, business-critical product deliverables.",
-        features: [
-            "Contractor vetting and deployment in under 48 hours",
-            "Automated invoicing, timesheets, and milestone tracking",
-            "Easy direct hire transition options",
-            "Dedicated client support manager contact"
+            "Practical, job-aligned training curriculum",
+            "Mentorship from experienced industry leaders",
+            "Hands-on projects & skill building modules",
+            "Career counseling & direct placement assistance"
         ]
     }
 };
@@ -628,4 +606,15 @@ function logoutSession() {
     
     // Route back to home
     navigateTo("home");
+}
+
+// 12. PM-WANI PDO Registration Form Handler
+function handlePdoSubmit(event) {
+    event.preventDefault();
+    const name = document.getElementById("pdo-name").value;
+    const phone = document.getElementById("pdo-phone").value;
+    const location = document.getElementById("pdo-location").value;
+
+    triggerToast("PDO Registration Received", `Thank you ${name}! Our PM-WANI setup team will contact you at ${phone} to provision your Wi-Fi hotspot in ${location}.`);
+    event.target.reset();
 }
