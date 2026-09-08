@@ -145,7 +145,8 @@ nav {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 28px;
+    align-items: center;
 }
 
 .nav-links a {
@@ -156,6 +157,8 @@ nav {
     transition: var(--transition-fast);
     position: relative;
     padding: 6px 0;
+    display: inline-flex;
+    align-items: center;
 }
 
 .nav-links a::after {
@@ -176,6 +179,68 @@ nav {
 
 .nav-links a.active::after {
     width: 100%;
+}
+
+/* Nav Dropdown Desktop Menu */
+.nav-dropdown {
+    position: relative;
+}
+
+.dropdown-icon {
+    font-size: 0.7rem;
+    margin-left: 5px;
+    transition: var(--transition-fast);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 210px;
+    background: rgba(14, 16, 26, 0.95);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    padding: 10px 0;
+    list-style: none;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: var(--transition-smooth);
+    z-index: 1100;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.nav-dropdown:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: var(--transition-fast);
+    white-space: nowrap;
+}
+
+.dropdown-menu li a::after {
+    display: none;
+}
+
+.dropdown-menu li a:hover {
+    color: var(--text-highlight);
+    background: rgba(255, 255, 255, 0.05);
+    padding-left: 24px;
 }
 
 .cta-group {
@@ -243,6 +308,7 @@ nav {
     cursor: pointer;
     background: none;
     border: none;
+    z-index: 1200;
 }
 
 .menu-toggle span {
@@ -252,6 +318,18 @@ nav {
     background-color: var(--text-primary);
     border-radius: 2px;
     transition: var(--transition-fast);
+}
+
+.menu-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+.menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
 }
 
 /* Layout Main container */

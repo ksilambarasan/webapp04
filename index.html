@@ -25,11 +25,37 @@
         <nav>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#home" class="nav-link active" onclick="navigateTo('home')">Home</a></li>
-                <li><a href="#about" class="nav-link" onclick="navigateTo('about')">About Us</a></li>
-                <li><a href="#services" class="nav-link" onclick="navigateTo('services')">Services</a></li>
-                <li><a href="#pmwani" class="nav-link" onclick="navigateTo('pmwani')">PM-WANI</a></li>
-                <li><a href="#jobseeker" class="nav-link" onclick="navigateTo('jobseeker')">Job Seeker</a></li>
-                <li><a href="#employer" class="nav-link" onclick="navigateTo('employer')">Employers</a></li>
+                <li class="nav-dropdown">
+                    <a href="#about" class="nav-link" onclick="navigateTo('about')">About Us <i class="fa-solid fa-chevron-down dropdown-icon"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#about" onclick="navigateTo('about')">Company Profile</a></li>
+                        <li><a href="#about" onclick="navigateTo('about')">Founder's Profile</a></li>
+                    </ul>
+                </li>
+                <li class="nav-dropdown">
+                    <a href="#services" class="nav-link" onclick="navigateTo('services')">Services <i class="fa-solid fa-chevron-down dropdown-icon"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#pmwani" onclick="navigateTo('pmwani')">Thagadur Wi-Fi PM-WANI</a></li>
+                        <li><a href="#services" onclick="navigateTo('services')">Hire, Train, Deploy</a></li>
+                        <li><a href="#services" onclick="navigateTo('services')">Staffing Services</a></li>
+                        <li><a href="#services" onclick="navigateTo('services')">Job-Oriented Training</a></li>
+                    </ul>
+                </li>
+                <li><a href="#pmwani" class="nav-link" onclick="navigateTo('pmwani')">PM-WANI Hub</a></li>
+                <li class="nav-dropdown">
+                    <a href="#jobseeker" class="nav-link" onclick="navigateTo('jobseeker')">Job Seekers <i class="fa-solid fa-chevron-down dropdown-icon"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#jobseeker" onclick="navigateTo('jobseeker')">Candidate Registration</a></li>
+                        <li><a href="#jobseeker" onclick="navigateTo('jobseeker')">Candidate Sign In</a></li>
+                    </ul>
+                </li>
+                <li class="nav-dropdown">
+                    <a href="#employer" class="nav-link" onclick="navigateTo('employer')">Employers <i class="fa-solid fa-chevron-down dropdown-icon"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#employer" onclick="navigateTo('employer')">Employer Onboarding</a></li>
+                        <li><a href="#employer" onclick="navigateTo('employer')">Post a Job Requirement</a></li>
+                    </ul>
+                </li>
                 <li><a href="#contact" class="nav-link" onclick="navigateTo('contact')">Contact Us</a></li>
             </ul>
         </nav>
