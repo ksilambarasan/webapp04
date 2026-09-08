@@ -44,7 +44,13 @@
                         <li><a href="#services" onclick="navigateTo('services')">Job-Oriented Training</a></li>
                     </ul>
                 </li>
-                <li><a href="#pmwani" class="nav-link" onclick="navigateTo('pmwani')">PM-WANI Hub</a></li>
+                <li class="nav-dropdown">
+                    <a href="#pmwani" class="nav-link" onclick="navigateTo('pmwani')">PM-WANI Hub <i class="fa-solid fa-chevron-down dropdown-icon"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#pmwani" onclick="navigateTo('pmwani')">PM-WANI Wi-Fi Overview</a></li>
+                        <li><a href="#pmwani" onclick="navigateTo('pmwani'); setTimeout(() => { const el = document.getElementById('pdo-register-box'); if(el) el.scrollIntoView({behavior:'smooth'}); }, 150)">Become a PDO Partner</a></li>
+                    </ul>
+                </li>
                 <li class="nav-dropdown">
                     <a href="#jobseeker" class="nav-link" onclick="navigateTo('jobseeker')">Job Seekers <i class="fa-solid fa-chevron-down dropdown-icon"></i></a>
                     <ul class="dropdown-menu">
