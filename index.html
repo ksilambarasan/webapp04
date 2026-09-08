@@ -35,6 +35,9 @@
                 <li class="nav-dropdown">
                     <a href="#services" class="nav-link" onclick="navigateTo('services')">Services <i class="fa-solid fa-chevron-down dropdown-icon"></i></a>
                     <ul class="dropdown-menu">
+                        <li><a href="#services" onclick="navigateTo('services'); setTimeout(()=>openServiceModal('aiconsulting'), 100)">AI Implementation & Consulting</a></li>
+                        <li><a href="#services" onclick="navigateTo('services'); setTimeout(()=>openServiceModal('devopscloud'), 100)">DevOps & Cloud Migration</a></li>
+                        <li><a href="#services" onclick="navigateTo('services'); setTimeout(()=>openServiceModal('customsoftware'), 100)">Custom Software Development</a></li>
                         <li><a href="#pmwani" onclick="navigateTo('pmwani')">Thagadur Wi-Fi PM-WANI</a></li>
                         <li><a href="#services" onclick="navigateTo('services')">Hire, Train, Deploy</a></li>
                         <li><a href="#services" onclick="navigateTo('services')">Staffing Services</a></li>
@@ -299,30 +302,51 @@
         <!-- SERVICES SECTION -->
         <section id="services-section">
             <h2 class="section-title">Core Services & Solutions</h2>
-            <p class="section-subtitle">Customized placement, skill training, and digital connectivity frameworks.</p>
+            <p class="section-subtitle">Customized technology consulting, cloud architecture, placement, and skill training frameworks.</p>
             <div class="services-grid">
                 <!-- Service 1 -->
+                <div class="glass-panel service-card">
+                    <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
+                    <h3>AI Implementation & Consulting</h3>
+                    <p>Drive innovation with Generative AI, custom LLM integration, workflow automation bots, and data science strategies tailored for modern enterprise growth.</p>
+                    <a href="javascript:void(0)" class="service-link" onclick="openServiceModal('aiconsulting')">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- Service 2 -->
+                <div class="glass-panel service-card">
+                    <div class="service-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                    <h3>DevOps Consulting & Cloud Migration</h3>
+                    <p>Accelerate software deployment pipelines with CI/CD automation, Kubernetes container orchestration, AWS/Azure cloud migration, and Terraform infrastructure management.</p>
+                    <a href="javascript:void(0)" class="service-link" onclick="openServiceModal('devopscloud')">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- Service 3 -->
+                <div class="glass-panel service-card">
+                    <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>Custom Software Development</h3>
+                    <p>Engineer high-performance web applications, enterprise platforms, microservices architecture, and mobile apps built to scale with your business.</p>
+                    <a href="javascript:void(0)" class="service-link" onclick="openServiceModal('customsoftware')">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- Service 4 -->
                 <div class="glass-panel service-card">
                     <div class="service-icon"><i class="fa-solid fa-wifi"></i></div>
                     <h3>Thagadur Wi-Fi PM-WANI</h3>
                     <p>Public Wi-Fi Access Network Interface scheme by Govt of India. Enable shopkeepers & entrepreneurs to set up PDO Wi-Fi hotspots and earn revenue.</p>
                     <a href="javascript:void(0)" class="service-link" onclick="openServiceModal('pmwani')">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <!-- Service 2 -->
+                <!-- Service 5 -->
                 <div class="glass-panel service-card">
                     <div class="service-icon"><i class="fa-solid fa-user-gear"></i></div>
                     <h3>Hire, Train, Deploy</h3>
                     <p>Streamlined talent acquisition solution. Sourcing top candidates, providing targeted skill training, and deploying job-ready professionals.</p>
                     <a href="javascript:void(0)" class="service-link" onclick="openServiceModal('hiretraindeploy')">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <!-- Service 3 -->
+                <!-- Service 6 -->
                 <div class="glass-panel service-card">
                     <div class="service-icon"><i class="fa-solid fa-users-line"></i></div>
                     <h3>Staffing Services</h3>
                     <p>Tailored job matching, expert resume crafting, interview coaching, and talent acquisition for permanent and contract staffing positions.</p>
                     <a href="javascript:void(0)" class="service-link" onclick="openServiceModal('staffing')">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <!-- Service 4 -->
+                <!-- Service 7 -->
                 <div class="glass-panel service-card">
                     <div class="service-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
                     <h3>Job-Oriented Training</h3>

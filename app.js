@@ -45,6 +45,39 @@ const servicesData = {
             "Hands-on projects & skill building modules",
             "Career counseling & direct placement assistance"
         ]
+    },
+    aiconsulting: {
+        title: "AI Implementation & Consulting",
+        icon: "fa-brain",
+        desc: "Empower your business with cutting-edge AI technologies, Generative AI models, Custom LLM integrations, automated workflow bots, and data-driven decision frameworks.",
+        features: [
+            "Generative AI & Custom LLM Integration Solutions",
+            "Enterprise Workflow Automation & Intelligent Agents",
+            "Predictive Analytics & Data Science Modeling",
+            "AI Strategy Roadmap, Security & Compliance Guidance"
+        ]
+    },
+    devopscloud: {
+        title: "DevOps Consulting & Cloud Migration",
+        icon: "fa-cloud-arrow-up",
+        desc: "Accelerate delivery speed and enhance cloud reliability. Expert DevOps automation, CI/CD pipelines, Kubernetes container orchestration, and seamless AWS/Azure cloud migration.",
+        features: [
+            "End-to-end AWS, Azure & GCP Cloud Infrastructure Setup",
+            "CI/CD Pipeline Automation (GitHub Actions, Jenkins, GitLab)",
+            "Containerization with Docker & Kubernetes Orchestration",
+            "Infrastructure as Code (Terraform) & 24/7 Cloud Monitoring"
+        ]
+    },
+    customsoftware: {
+        title: "Custom Software Development",
+        icon: "fa-code",
+        desc: "Build scalable, modern web applications, enterprise software systems, mobile solutions, and APIs engineered precisely for your unique operational requirements.",
+        features: [
+            "Full-Stack Web & Mobile Application Engineering",
+            "Scalable Microservices Architecture & RESTful API Design",
+            "UI/UX Design, Front-End & Backend System Integration",
+            "Agile Delivery, Rigorous QA Testing & Maintenance Support"
+        ]
     }
 };
 
