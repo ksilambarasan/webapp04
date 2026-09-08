@@ -947,26 +947,44 @@
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>Legal & Info</h4>
+                <h4>Legal & Policies</h4>
                 <ul class="footer-links">
                     <li><a href="#about" onclick="navigateTo('about')">Founder's Profile</a></li>
                     <li><a href="#contact" onclick="navigateTo('contact')">Contact Us</a></li>
-                    <li><a href="javascript:void(0)">Privacy Policy</a></li>
-                    <li><a href="javascript:void(0)">Terms & Conditions</a></li>
-                    <li><a href="javascript:void(0)">Refund Policy</a></li>
+                    <li><a href="javascript:void(0)" onclick="openPolicyModal('privacy')">Privacy Policy</a></li>
+                    <li><a href="javascript:void(0)" onclick="openPolicyModal('refund')">Refund Policy</a></li>
+                    <li><a href="javascript:void(0)" onclick="openPolicyModal('shipping')">Shipping Policy</a></li>
+                    <li><a href="javascript:void(0)" onclick="openPolicyModal('terms')">Terms & Conditions</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Thagadur Career Services. All rights reserved.</p>
+            <p>&copy; 2026 Thagadur Career Services (OPC) Private Limited. All rights reserved.</p>
             <div class="footer-bottom-links">
-                <a href="javascript:void(0)">Privacy Policy</a>
-                <a href="javascript:void(0)">Terms of Service</a>
-                <a href="javascript:void(0)">Refund Policy</a>
-                <a href="javascript:void(0)">Shipping Policy</a>
+                <a href="javascript:void(0)" onclick="openPolicyModal('privacy')">Privacy Policy</a>
+                <a href="javascript:void(0)" onclick="openPolicyModal('refund')">Refund Policy</a>
+                <a href="javascript:void(0)" onclick="openPolicyModal('shipping')">Shipping Policy</a>
+                <a href="javascript:void(0)" onclick="openPolicyModal('terms')">Terms & Conditions</a>
+                <a href="#contact" onclick="navigateTo('contact')">Contact Us</a>
             </div>
         </div>
     </footer>
+
+    <!-- Policy Viewer Modal Overlay -->
+    <div class="overlay-modal" id="policy-modal">
+        <div class="modal-content" style="max-width:650px; max-height:85vh; overflow-y:auto;">
+            <button class="modal-close" onclick="closePolicyModal()"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3 id="policy-title-ph">Policy Document</h3>
+            <p style="color:var(--secondary-color); font-size:0.85rem; font-weight:600; margin-bottom:20px;" id="policy-subtitle-ph">Thagadur Career Services (OPC) Private Limited</p>
+            <div id="policy-body-ph" style="font-size:0.9rem; line-height:1.6; color:var(--text-primary); text-align:left; border-top:1px solid var(--border-color); padding-top:15px;">
+                <!-- Injected dynamically -->
+            </div>
+            <div style="display:flex; justify-content:flex-end; margin-top:25px;">
+                <button class="btn btn-secondary" onclick="closePolicyModal()">Close Document</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Service Details Modal Overlay -->
     <div class="overlay-modal" id="service-modal">

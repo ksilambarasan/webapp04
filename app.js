@@ -618,3 +618,80 @@ function handlePdoSubmit(event) {
     triggerToast("PDO Registration Received", `Thank you ${name}! Our PM-WANI setup team will contact you at ${phone} to provision your Wi-Fi hotspot in ${location}.`);
     event.target.reset();
 }
+
+// 13. Policy Modal Data & Controllers
+const policiesData = {
+    privacy: {
+        title: "Privacy Policy",
+        subtitle: "Thagadur Career Services (OPC) Private Limited",
+        content: `
+            <h4 style="color:var(--secondary-color); margin-top:15px; margin-bottom:6px;">1. Personal Information Collection</h4>
+            <p style="color:var(--text-muted); margin-bottom:12px;">The Application collects user personal information including Mobile Number (10-digit, mandatory) and Email Address (optional) required for service provisioning.</p>
+            <h4 style="color:var(--secondary-color); margin-top:15px; margin-bottom:6px;">2. Data Sharing with PDOA</h4>
+            <p style="color:var(--text-muted); margin-bottom:12px;">Mobile numbers and email addresses are securely shared with authorized Public Data Office Aggregators (PDOA) using encrypted HTTPS methods to provide Wi-Fi access service.</p>
+            <h4 style="color:var(--secondary-color); margin-top:15px; margin-bottom:6px;">3. Device Information</h4>
+            <p style="color:var(--text-muted); margin-bottom:12px;">We collect device parameters (Device Make, Model, Operating System Version, and supported Wi-Fi bands) for technical troubleshooting and optimizing Wi-Fi network performance.</p>
+            <h4 style="color:var(--secondary-color); margin-top:15px; margin-bottom:6px;">4. Data Security & Storage</h4>
+            <p style="color:var(--text-muted); margin-bottom:12px;">User data is stored securely in backend databases. Data may be shared with authorized Indian regulatory agencies strictly to meet statutory compliance mandates.</p>
+            <h4 style="color:var(--secondary-color); margin-top:15px; margin-bottom:6px;">5. Account Deletion</h4>
+            <p style="color:var(--text-muted); margin-bottom:12px;">Users may request complete account deletion by contacting info@thagadur.com or via helpline +91-7899752753. Personal data will be erased from backend servers.</p>
+        `
+    },
+    refund: {
+        title: "Cancellation & Refund Policy",
+        subtitle: "Thagadur Career Services (OPC) Private Limited",
+        content: `
+            <h4 style="color:var(--secondary-color); margin-top:15px; margin-bottom:6px;">1. Customer Satisfaction Commitment</h4>
+            <p style="color:var(--text-muted); margin-bottom:12px;">Our focus is complete customer satisfaction. In the event that you are dissatisfied with services provided, genuine and verified claims will be eligible for a refund after investigation.</p>
+            <h4 style="color:var(--secondary-color); margin-top:15px; margin-bottom:6px;">2. Returns for Goods</h4>
+            <p style="color:var(--text-muted); margin-bottom:12px;">Physical goods (such as PM-WANI PDO Wi-Fi Routers & Devices) can be returned within 7 days of delivery in original packaging.</p>
+            <h4 style="color:var(--secondary-color); margin-top:15px; margin-bottom:6px;">3. Services & Digital Sales</h4>
+            <p style="color:var(--text-muted); margin-bottom:12px;">Staffing services once delivered and prepaid Wi-Fi data recharges are final and non-refundable.</p>
+            <h4 style="color:var(--secondary-color); margin-top:15px; margin-bottom:6px;">4. Incorrect Payment Instructions</h4>
+            <p style="color:var(--text-muted); margin-bottom:12px;">Users are responsible for entering accurate account and mobile numbers. Thagadur Career Services (OPC) Private Limited is not liable for erroneous transfers to third parties.</p>
+        `
+    },
+    shipping: {
+        title: "Shipping & Return Policy",
+        subtitle: "Thagadur Career Services (OPC) Private Limited",
+        content: `
+            <h4 style="color:var(--secondary-color); margin-top:15px; margin-bottom:6px;">1. Shipping & Dispatch</h4>
+            <p style="color:var(--text-muted); margin-bottom:12px;">PDO hardware devices and materials are dispatched via trackable logistics partners within 2-3 working days of order confirmation.</p>
+            <h4 style="color:var(--secondary-color); margin-top:15px; margin-bottom:6px;">2. Return Address</h4>
+            <p style="color:var(--text-muted); margin-bottom:12px;">To return eligible goods within 7 days, ship items to:<br>
+            <strong>Thagadur Career Services (OPC) Private Limited</strong><br>
+            11.C, 1st floor, Pennagram Road, Opposite to DDCC bank,<br>
+            Dharmapuri - 636701, Tamil Nadu.<br>
+            Phone: +91-7899752753 | Email: info@thagadur.com</p>
+            <h4 style="color:var(--secondary-color); margin-top:15px; margin-bottom:6px;">3. Shipping Costs</h4>
+            <p style="color:var(--text-muted); margin-bottom:12px;">Customers are responsible for return shipping costs (non-refundable). Using a trackable shipping service is advised for items valued over ₹1,000.</p>
+        `
+    },
+    terms: {
+        title: "Terms & Conditions",
+        subtitle: "Thagadur Career Services (OPC) Private Limited",
+        content: `
+            <h4 style="color:var(--secondary-color); margin-top:15px; margin-bottom:6px;">1. Acceptance of Terms</h4>
+            <p style="color:var(--text-muted); margin-bottom:12px;">Accessing Thagadur Career Services website, job portals, or PM-WANI Wi-Fi services constitutes full agreement to these terms and operational rules.</p>
+            <h4 style="color:var(--secondary-color); margin-top:15px; margin-bottom:6px;">2. Service Rules & PM-WANI Compliance</h4>
+            <p style="color:var(--text-muted); margin-bottom:12px;">Users and PDO partners must comply with the PM-WANI framework guidelines and the Information Technology Act of India. Misuse of Wi-Fi hotspots is prohibited.</p>
+            <h4 style="color:var(--secondary-color); margin-top:15px; margin-bottom:6px;">3. Disclaimer & Jurisdiction</h4>
+            <p style="color:var(--text-muted); margin-bottom:12px;">Services are subject to telecommunication operational conditions. Any legal disputes shall be subject to the exclusive jurisdiction of the courts in Dharmapuri, Tamil Nadu.</p>
+        `
+    }
+};
+
+function openPolicyModal(policyKey) {
+    const policy = policiesData[policyKey];
+    if (!policy) return;
+
+    document.getElementById("policy-title-ph").textContent = policy.title;
+    document.getElementById("policy-subtitle-ph").textContent = policy.subtitle;
+    document.getElementById("policy-body-ph").innerHTML = policy.content;
+
+    document.getElementById("policy-modal").classList.add("active");
+}
+
+function closePolicyModal() {
+    document.getElementById("policy-modal").classList.remove("active");
+}
