@@ -774,7 +774,7 @@ h1, h2, h3, h4 {
 .wizard-steps::before {
     content: '';
     position: absolute;
-    top: 20px;
+    top: 21px;
     left: 0;
     width: 100%;
     height: 2px;
@@ -784,7 +784,7 @@ h1, h2, h3, h4 {
 
 .wizard-step-progress {
     position: absolute;
-    top: 20px;
+    top: 21px;
     left: 0;
     width: 0%;
     height: 2px;
@@ -825,6 +825,8 @@ h1, h2, h3, h4 {
 .step-indicator span.label {
     position: absolute;
     bottom: -28px;
+    left: 50%;
+    transform: translateX(-50%);
     white-space: nowrap;
     font-size: 0.75rem;
     font-weight: 600;
@@ -1597,6 +1599,10 @@ footer {
         grid-template-columns: 1fr;
         gap: 0;
     }
+
+    .about-values {
+        grid-template-columns: 1fr;
+    }
     
     .dashboard-grid {
         grid-template-columns: 1fr;
@@ -1622,6 +1628,39 @@ footer {
         gap: 12px;
     }
     .footer-top {
+        grid-template-columns: 1fr;
+    }
+    .toast-notification {
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        max-width: none;
+        width: auto;
+    }
+}
+
+/* Founder Profile Card Alignment Utilities */
+.founder-card-wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.founder-subgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .founder-card-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .founder-subgrid {
         grid-template-columns: 1fr;
     }
 }
