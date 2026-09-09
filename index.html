@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Thagadur Career Services - Premier placement, staffing, PM-WANI Wi-Fi, Hire-Train-Deploy and job-oriented training agency based in Dharmapuri. Empowering careers, inspiring change.">
-    <title>Thagadur Career Services | Career & Digital Connectivity Solutions</title>
+    <meta name="description" content="Thagadur AI & Technology Solutions - Next-Generation AI Consulting, Generative AI Implementation, Custom Software Engineering, DevOps Cloud Migration, and PM-WANI Digital Infrastructure.">
+    <title>Thagadur AI & Technology Solutions | Next-Gen AI & Digital Transformation</title>
     <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
     <!-- FontAwesome for Icons -->
@@ -15,7 +15,7 @@
     <!-- Header / Navigation -->
     <header id="header">
         <a href="#home" class="logo" onclick="navigateTo('home')">
-            <img src="logo.png" alt="Thagadur Career Services" class="logo-img">
+            <img src="logo.png" alt="Thagadur AI Solutions" class="logo-img">
         </a>
         <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
             <span></span>
@@ -26,14 +26,7 @@
             <ul class="nav-links" id="nav-links">
                 <li><a href="#home" class="nav-link active" onclick="navigateTo('home')">Home</a></li>
                 <li class="nav-dropdown">
-                    <a href="#about" class="nav-link" onclick="navigateTo('about')">About Us <i class="fa-solid fa-chevron-down dropdown-icon"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#about" onclick="navigateTo('about')">Company Profile</a></li>
-                        <li><a href="#about" onclick="navigateTo('about')">Founder's Profile</a></li>
-                    </ul>
-                </li>
-                <li class="nav-dropdown">
-                    <a href="#services" class="nav-link" onclick="navigateTo('services')">Services <i class="fa-solid fa-chevron-down dropdown-icon"></i></a>
+                    <a href="#services" class="nav-link" onclick="navigateTo('services')">AI & Tech Solutions <i class="fa-solid fa-chevron-down dropdown-icon"></i></a>
                     <ul class="dropdown-menu">
                         <li><a href="#services" onclick="navigateTo('services'); setTimeout(()=>openServiceModal('aiconsulting'), 100)">AI Implementation & Consulting</a></li>
                         <li><a href="#services" onclick="navigateTo('services'); setTimeout(()=>openServiceModal('devopscloud'), 100)">DevOps & Cloud Migration</a></li>
@@ -44,9 +37,16 @@
                         <li><a href="#services" onclick="navigateTo('services')">Job-Oriented Training</a></li>
                     </ul>
                 </li>
+                <li class="nav-dropdown">
+                    <a href="#about" class="nav-link" onclick="navigateTo('about')">About Us <i class="fa-solid fa-chevron-down dropdown-icon"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#about" onclick="navigateTo('about')">Company Profile</a></li>
+                        <li><a href="#about" onclick="navigateTo('about')">Founder's Profile</a></li>
+                    </ul>
+                </li>
                 <li><a href="#pmwani" class="nav-link" onclick="navigateTo('pmwani')">PM-WANI Hub</a></li>
                 <li class="nav-dropdown">
-                    <a href="#jobseeker" class="nav-link" onclick="navigateTo('jobseeker')">Job Seekers <i class="fa-solid fa-chevron-down dropdown-icon"></i></a>
+                    <a href="#jobseeker" class="nav-link" onclick="navigateTo('jobseeker')">Talent Portal <i class="fa-solid fa-chevron-down dropdown-icon"></i></a>
                     <ul class="dropdown-menu">
                         <li><a href="#jobseeker" onclick="navigateTo('jobseeker')">Candidate Registration</a></li>
                         <li><a href="#jobseeker" onclick="navigateTo('jobseeker')">Candidate Sign In</a></li>
@@ -63,8 +63,8 @@
             </ul>
         </nav>
         <div class="cta-group">
-            <a href="#jobseeker" class="btn btn-secondary" onclick="navigateTo('jobseeker')">Sign In</a>
-            <a href="#employer" class="btn btn-primary" onclick="navigateTo('employer')">Post Job</a>
+            <a href="#contact" class="btn btn-secondary" onclick="navigateTo('contact')">Book AI Audit</a>
+            <a href="#services" class="btn btn-primary" onclick="navigateTo('services')">Explore AI Solutions</a>
         </div>
     </header>
 
@@ -75,119 +75,119 @@
         <section id="home-section" class="active">
             <div class="hero-content">
                 <div class="hero-left">
-                    <span class="tag tag-highlight" style="margin-bottom:15px; display:inline-block; padding:6px 14px; font-size:0.85rem;">
-                        <i class="fa-solid fa-star"></i> Empowering Careers, Inspiring Change
+                    <span class="tag tag-highlight" style="margin-bottom:15px; display:inline-block; padding:6px 16px; font-size:0.85rem;">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> Next-Gen Artificial Intelligence & Cloud Engineering
                     </span>
-                    <h1>Connecting Talent to Opportunity & Bridging <span class="gradient-text">Digital Divides</span></h1>
-                    <p>Thagadur Career Services is your trusted career and talent partner in Dharmapuri. From specialized Staffing and Hire-Train-Deploy services to PM-WANI Public Wi-Fi network setups and Job-Oriented Training, we drive growth for individuals and enterprises alike.</p>
+                    <h1>Transform Your Business with <span class="gradient-text">Enterprise Artificial Intelligence</span></h1>
+                    <p>Thagadur AI Solutions pioneers intelligent transformation. From Generative AI, custom LLM integration, and cloud DevOps infrastructure to high-impact software engineering and specialized technical staffing, we build the future of technology.</p>
                     <div class="hero-btns">
-                        <a href="#jobseeker" class="btn btn-primary" onclick="navigateTo('jobseeker')">
-                            <i class="fa-solid fa-briefcase"></i> Candidate Registration
+                        <a href="#services" class="btn btn-primary" onclick="navigateTo('services')">
+                            <i class="fa-solid fa-brain"></i> Explore AI Solutions
                         </a>
-                        <a href="#pmwani" class="btn btn-secondary" onclick="navigateTo('pmwani')">
-                            <i class="fa-solid fa-wifi"></i> Become a PM-WANI PDO
+                        <a href="#contact" class="btn btn-secondary" onclick="navigateTo('contact')">
+                            <i class="fa-solid fa-paper-plane"></i> Schedule AI Consultation
                         </a>
                     </div>
                     <div class="hero-stats">
                         <div class="stat-item">
-                            <span class="stat-num" id="stat-hires">10+</span>
-                            <span class="stat-label">Years Sector Experience</span>
+                            <span class="stat-num" id="stat-hires">99.9%</span>
+                            <span class="stat-label">AI System Uptime</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-num" id="stat-companies">100%</span>
-                            <span class="stat-label">Job-Ready Training</span>
+                            <span class="stat-num" id="stat-companies">GenAI</span>
+                            <span class="stat-label">LLM & Automation</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-num" id="stat-jobs">PM-WANI</span>
-                            <span class="stat-label">Wi-Fi Hotspot Network</span>
+                            <span class="stat-num" id="stat-jobs">10+ Yrs</span>
+                            <span class="stat-label">Tech Excellence</span>
                         </div>
                     </div>
                 </div>
                 <div class="hero-right">
                     <div class="glow-card glow-card-1">
                         <div class="card-header">
-                            <div class="card-icon"><i class="fa-solid fa-wifi"></i></div>
+                            <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
                             <div class="card-title">
-                                <h4>PM-WANI Wi-Fi Hotspot</h4>
-                                <p>Turn Connection into Cash</p>
+                                <h4>Generative AI & LLMs</h4>
+                                <p>Autonomous AI Workflows</p>
                             </div>
                         </div>
                         <div class="card-body">
-                            Join the Central Govt Wi-Fi mission. Earn effortless revenue as a registered Public Data Office (PDO).
+                            Deploy custom AI agents, intelligent document parsing, and RAG knowledge bases tailored for your enterprise.
                         </div>
                         <div class="card-tags">
-                            <span class="tag tag-highlight">PM-WANI</span>
-                            <span class="tag">PDO Setup</span>
-                            <span class="tag">High Speed</span>
+                            <span class="tag tag-highlight">Generative AI</span>
+                            <span class="tag">LLM Agents</span>
+                            <span class="tag">RAG Pipeline</span>
                         </div>
                     </div>
                     <div class="glow-card glow-card-2">
                         <div class="card-header">
-                            <div class="card-icon"><i class="fa-solid fa-user-gear"></i></div>
+                            <div class="card-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
                             <div class="card-title">
-                                <h4>Hire, Train, Deploy</h4>
-                                <p>End-to-End Talent Management</p>
+                                <h4>Cloud & DevOps Engineering</h4>
+                                <p>High-Scalability Architecture</p>
                             </div>
                         </div>
                         <div class="card-body">
-                            We recruit top candidates, bridge skill gaps with practical training, and deploy job-ready pros.
+                            Automate CI/CD pipelines, containerize microservices with Kubernetes, and migrate securely to AWS & Azure.
                         </div>
                         <div class="card-tags">
-                            <span class="tag tag-highlight">Sourcing</span>
-                            <span class="tag">Skill Modules</span>
-                            <span class="tag">Deployed</span>
+                            <span class="tag tag-highlight">Kubernetes</span>
+                            <span class="tag">AWS / Azure</span>
+                            <span class="tag">CI/CD</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Featured Announcement Banner -->
-            <div class="glass-panel" style="margin-top: 80px; border-left: 4px solid var(--secondary-color); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;">
+            <!-- Featured AI Announcement Banner -->
+            <div class="glass-panel" style="margin-top: 80px; border-left: 4px solid var(--primary-color); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px; background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(6, 182, 212, 0.08));">
                 <div>
                     <h3 style="font-size:1.4rem; color:var(--text-highlight); margin-bottom:6px;">
-                        <i class="fa-solid fa-bullhorn" style="color:var(--secondary-color);"></i> Become a PM-WANI PDO Partner Today!
+                        <i class="fa-solid fa-wand-magic-sparkles" style="color:var(--primary-color);"></i> Accelerate Enterprise Innovation with Custom Generative AI
                     </h3>
                     <p style="color:var(--text-muted); font-size:0.95rem; margin:0;">
-                        Are you ready to turn your internet connection into income? Join our Public Data Office network in Dharmapuri and start earning effortlessly!
+                        Integrate autonomous AI agents, fine-tuned LLMs, and automated workflow intelligence into your existing software stack.
                     </p>
                 </div>
-                <a href="#pmwani" class="btn btn-primary" onclick="navigateTo('pmwani')">
-                    Register as PDO <i class="fa-solid fa-arrow-right"></i>
+                <a href="#services" class="btn btn-primary" onclick="navigateTo('services'); setTimeout(()=>openServiceModal('aiconsulting'), 100)">
+                    Schedule AI Demo <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
 
-            <!-- Core Services Overview -->
+            <!-- Premier AI & Capabilities Overview -->
             <div style="margin-top: 80px;">
-                <h2 class="section-title">Our Premier Capabilities</h2>
-                <p class="section-subtitle">Empowering candidates with skills and providing employers with battle-tested talent.</p>
+                <h2 class="section-title">AI & Technology Core Capabilities</h2>
+                <p class="section-subtitle">Driving digital transformation through AI engineering, cloud architecture, and specialized tech talent.</p>
                 <div class="services-grid">
-                    <!-- Service 1 -->
+                    <!-- Capability 1 -->
                     <div class="glass-panel service-card">
-                        <div class="service-icon"><i class="fa-solid fa-wifi"></i></div>
-                        <h3>Thagadur Wi-Fi PM-WANI</h3>
-                        <p>Expanding seamless internet connectivity across public spaces. Become a PDO partner, provide high-speed hotspots, and generate steady revenue.</p>
-                        <a href="javascript:void(0)" class="service-link" onclick="openServiceModal('pmwani')">Know More <i class="fa-solid fa-arrow-right"></i></a>
+                        <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h3>AI Implementation & Consulting</h3>
+                        <p>Enterprise Generative AI, custom LLM fine-tuning, RAG knowledge bases, intelligent automation bots, and data science strategies built for scale.</p>
+                        <a href="javascript:void(0)" class="service-link" onclick="openServiceModal('aiconsulting')">Explore AI Solutions <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
-                    <!-- Service 2 -->
+                    <!-- Capability 2 -->
+                    <div class="glass-panel service-card">
+                        <div class="service-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                        <h3>DevOps Consulting & Cloud Migration</h3>
+                        <p>End-to-end AWS/Azure cloud architecture, CI/CD pipeline automation, Kubernetes container orchestration, and Infrastructure as Code (Terraform).</p>
+                        <a href="javascript:void(0)" class="service-link" onclick="openServiceModal('devopscloud')">Explore Cloud Solutions <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <!-- Capability 3 -->
+                    <div class="glass-panel service-card">
+                        <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Custom Software Engineering</h3>
+                        <p>High-performance web apps, microservices APIs, mobile solutions, and enterprise software engineering built with modern frameworks.</p>
+                        <a href="javascript:void(0)" class="service-link" onclick="openServiceModal('customsoftware')">Explore Software Engineering <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <!-- Capability 4 -->
                     <div class="glass-panel service-card">
                         <div class="service-icon"><i class="fa-solid fa-user-gear"></i></div>
-                        <h3>Hire, Train, Deploy</h3>
-                        <p>Comprehensive talent solution. Sourcing top talent, training candidates in job-ready skillsets, and seamlessly integrating them into company workflows.</p>
-                        <a href="javascript:void(0)" class="service-link" onclick="openServiceModal('hiretraindeploy')">Know More <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                    <!-- Service 3 -->
-                    <div class="glass-panel service-card">
-                        <div class="service-icon"><i class="fa-solid fa-users-line"></i></div>
-                        <h3>Staffing Services</h3>
-                        <p>Tailored job matching, expert resume & interview support for candidates, combined with curated, top-tier talent acquisition for employers.</p>
-                        <a href="javascript:void(0)" class="service-link" onclick="openServiceModal('staffing')">Know More <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                    <!-- Service 4 -->
-                    <div class="glass-panel service-card">
-                        <div class="service-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
-                        <h3>Job-Oriented Training</h3>
-                        <p>Practical career coaching and job-aligned training programs designed to equip professionals and graduates for high-demand competitive roles.</p>
-                        <a href="javascript:void(0)" class="service-link" onclick="openServiceModal('training')">Know More <i class="fa-solid fa-arrow-right"></i></a>
+                        <h3>Hire, Train & Deploy Tech Squads</h3>
+                        <p>Comprehensive technical recruitment, targeted AI/cloud skill training, and rapid deployment of job-ready engineering teams.</p>
+                        <a href="javascript:void(0)" class="service-link" onclick="openServiceModal('hiretraindeploy')">Explore Talent Solutions <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -204,9 +204,9 @@
                     </div>
                     <div class="about-right">
                         <span class="tag tag-highlight" style="margin-bottom:10px; display:inline-block;">Founder's Vision</span>
-                        <h3 style="font-size:1.8rem; margin-bottom:12px;">"Empowering Careers, Inspiring Change"</h3>
+                        <h3 style="font-size:1.8rem; margin-bottom:12px;">"Pioneering Intelligent Technology & AI Transformation"</h3>
                         <p style="font-size:0.95rem; line-height:1.6; color:var(--text-muted); margin-bottom:18px;">
-                            "With over 10 years of experience in training and placement, my vision is to foster an inclusive environment where individuals unlock their full potential and employers access dependable, job-ready talent."
+                            "With over 10 years of hardware, software, and talent leadership, my vision is to empower enterprises with cutting-edge Artificial Intelligence while building world-class engineering teams."
                         </p>
                         <p style="font-size:0.85rem; color:var(--text-primary); font-weight:600;">
                             — Kalpana Kandhasamy (M.E. VLSI Design)
@@ -220,34 +220,37 @@
 
         <!-- ABOUT US & FOUNDER SECTION -->
         <section id="about-section">
-            <h2 class="section-title">About Thagadur Career Services</h2>
-            <p class="section-subtitle">Dedicated to career development, placement excellence, and digital transformation.</p>
+            <h2 class="section-title">About Thagadur AI Solutions</h2>
+            <p class="section-subtitle">Dedicated to Artificial Intelligence engineering, cloud transformation, and specialized technical talent placement.</p>
             
             <div class="about-grid">
                 <div class="about-left-img">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Thagadur Team Meeting">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Thagadur Engineering Team">
                     <div class="img-overlay-card">
                         <h4 style="color:var(--text-highlight); font-size:1.1rem; margin-bottom:5px;">Est. 2019</h4>
-                        <p style="color:var(--text-muted); font-size:0.8rem; line-height:1.4; margin:0;">Headquartered in Dharmapuri, serving candidates and business partners across Tamil Nadu and India.</p>
+                        <p style="color:var(--text-muted); font-size:0.8rem; line-height:1.4; margin:0;">Headquartered in Dharmapuri, delivering AI & Cloud engineering to global enterprise clients.</p>
                     </div>
                 </div>
                 <div class="about-right">
-                    <h3>Building Bridges Between Talent & Growth</h3>
-                    <p>Thagadur Career Services bridges the gap between candidates searching for career opportunities and companies seeking job-ready professionals. We coach students and working professionals through reorganizations, skill developments, and career transitions.</p>
-                    <p>Additionally, as part of the Central Government’s **PM-WANI (Prime Minister Wi-Fi Access Network Interface)** initiative, we empower local shopkeepers and entrepreneurs in Dharmapuri to host Public Wi-Fi hotspots and earn continuous passive income.</p>
+                    <h3>Empowering Enterprises with Intelligence & Talent</h3>
+                    <p>Thagadur AI Solutions bridges deep artificial intelligence expertise with real-world enterprise infrastructure. We consult companies on Generative AI integration, architect cloud-native microservices, and deploy battle-tested engineering teams.</p>
+                    <p>Additionally, as part of our digital connectivity mission, we manage PM-WANI Public Data Office (PDO) deployments in Dharmapuri, extending wireless internet connectivity to thousands of users.</p>
                     
                     <div class="about-values">
                         <div class="value-item">
-                            <div class="value-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div class="value-icon"><i class="fa-solid fa-brain"></i></div>
                             <div class="value-text">
-                                <h4>Job-Oriented Training</h4>
-                                <p>Customized skill development modules designed to meet modern industry demands.</p>
+                                <h4>Generative AI & LLMs</h4>
+                                <p>Custom AI models, RAG document search, and autonomous business workflows.</p>
                             </div>
                         </div>
                         <div class="value-item">
-                            <div class="value-icon"><i class="fa-solid fa-wifi"></i></div>
+                            <div class="value-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
                             <div class="value-text">
-                                <h4>PM-WANI Wi-Fi Mission</h4>
+                                <h4>DevOps & Cloud Scale</h4>
+                                <p>Automated CI/CD pipelines, Kubernetes, and secure cloud migration.</p>
+                            </div>
+                        </div>
                                 <p>Expanding internet connectivity and enabling local PDO monetization.</p>
                             </div>
                         </div>
@@ -944,29 +947,30 @@
         <div class="footer-top">
             <div class="footer-brand">
                 <a href="#home" class="logo" onclick="navigateTo('home')">
-                    <img src="logo.png" alt="Thagadur Career Services" class="logo-img">
+                    <img src="logo.png" alt="Thagadur AI Solutions" class="logo-img">
                 </a>
-                <p>Leading global placement consultancy bridging executive leadership and specialized technical teams since 2019.</p>
+                <p>Next-generation enterprise AI consulting, cloud engineering, and technical placement leadership since 2019.</p>
                 <p style="font-size:0.8rem; color:var(--text-muted); margin-top:8px;">
                     <i class="fa-solid fa-location-dot" style="color:var(--secondary-color);"></i> 11.C, 1st floor, Pennagram Road, Opp. DDCC Bank, Dharmapuri - 636701.<br>
                     <i class="fa-solid fa-phone" style="color:var(--secondary-color); margin-top:4px;"></i> +91-7899752753 | <i class="fa-solid fa-envelope"></i> info@thagadur.com
                 </p>
             </div>
             <div class="footer-col">
-                <h4>Services</h4>
+                <h4>AI & Tech Services</h4>
                 <ul class="footer-links">
+                    <li><a href="#services" onclick="navigateTo('services'); setTimeout(()=>openServiceModal('aiconsulting'), 100)">AI Implementation & Consulting</a></li>
+                    <li><a href="#services" onclick="navigateTo('services'); setTimeout(()=>openServiceModal('devopscloud'), 100)">DevOps & Cloud Migration</a></li>
+                    <li><a href="#services" onclick="navigateTo('services'); setTimeout(()=>openServiceModal('customsoftware'), 100)">Custom Software Development</a></li>
                     <li><a href="#pmwani" onclick="navigateTo('pmwani')">PM-WANI Wi-Fi Network</a></li>
-                    <li><a href="#services" onclick="navigateTo('services')">Hire, Train, Deploy</a></li>
-                    <li><a href="#services" onclick="navigateTo('services')">Staffing Services</a></li>
-                    <li><a href="#services" onclick="navigateTo('services')">Job-Oriented Training</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>Portals & Registration</h4>
+                <h4>Talent & Portals</h4>
                 <ul class="footer-links">
-                    <li><a href="#pmwani" onclick="navigateTo('pmwani')">Become a PM-WANI PDO</a></li>
-                    <li><a href="#jobseeker" onclick="navigateTo('jobseeker')">Candidate Registration</a></li>
-                    <li><a href="#employer" onclick="navigateTo('employer')">Employer Onboarding</a></li>
+                    <li><a href="#services" onclick="navigateTo('services')">Hire, Train & Deploy Squads</a></li>
+                    <li><a href="#jobseeker" onclick="navigateTo('jobseeker')">Candidate Tech Registration</a></li>
+                    <li><a href="#employer" onclick="navigateTo('employer')">Employer Tech Onboarding</a></li>
+                    <li><a href="#pmwani" onclick="navigateTo('pmwani')">PM-WANI PDO Partner</a></li>
                 </ul>
             </div>
             <div class="footer-col">
