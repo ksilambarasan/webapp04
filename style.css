@@ -37,9 +37,11 @@
 body {
     background-color: var(--bg-dark);
     color: var(--text-primary);
-    min-height: 100vh;
     overflow-x: hidden;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
 }
 
 /* Background Glowing Blobs */
@@ -338,11 +340,12 @@ nav {
 main {
     margin-top: var(--nav-height);
     position: relative;
+    flex: 1 0 auto;
 }
 
 /* Sections Transition */
 section {
-    padding: 60px 6% 60px;
+    padding: 50px 6% 40px;
     display: none;
     flex-direction: column;
     justify-content: flex-start;
